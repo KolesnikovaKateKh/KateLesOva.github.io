@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(demoShop/patt.png);
+}
+input,
+input:active,
+input:focus {
+    outline: none;
+}
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row:after, .menu:after, .search-basket:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+[class*=col-] {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-4 {
+    width: 33.33%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-8 {
+    width: 66.66%;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-12 {
+    width: 100%;
+}
+.header {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 25px 0;
+}
+.logo {
+    margin-top: 7px;
+}
+.menu-li {
+    width: 25%;
+    float: left;
+}
+.menu li:last-child {
+    border-right: 1px solid #2c71b8;
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    font-size: 21px;
+}
+.menu-block {
+    border-left: 1px solid #2c71b8;
+    line-height: 50px;
+    color: #2c71b8;
+    height: 50px;
+    text-align: center;
+}
+.menu-li:hover .menu-block {
+    color: #ffffff;
+    background-color: #2c71b8;
+}
+.menu-products {
+    position: relative;
+}
+.menu-products:hover .menu2 {
+    display: block;
+}
+.menu2 {
+    display: none;
+    position: absolute;
+    background-color: #2c71b8;
+    z-index: 1;
+}
+.menu2-block {
+    color: #ffffff;
+    width: 285px;
+    padding: 10px 30px;
+    text-align: left;
+}
+.menu2-block:hover {
+    background-color: #ffffff;
+    color: #2c71b8;
+}
+.search, .basket {
+    float: left;
+}
+.search {
+    height: 40px;
+    width: 200px;
+    margin: 5px 0;
+    border: 1px solid #2c71b8;
+}
+.search form {
+    height: 100%;
+    position: relative;
+}
+.search input {
+    position: absolute;
+    width: 160px;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 21px;
+    padding-left: 20px;
+}
+.search a {
+    position: absolute;
+    display: block;
+    right: 0;
+    margin: 4px;
+    background-color: #2c71b8;
+}
+.search-img {
+    background-image: url("demoShop/icon (4).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+.search input::-webkit-input-placeholder {
+    color: #2c71b8;
+}
+.search input::-moz-placeholder {
+    color: #2c71b8;
+}
+.basket {
+    margin: 5px 0 5px 30px;
+}
+.basket a {
+    position: relative;
+    display: block;
+    background-color: #fff;
+}
+.basket-img {
+    background-image: url("demoShop/icon (1).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
+.four {
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #2c71b8;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: -10px;
+}
+.slide {
+    height: 400px;
+}
+.device-type {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.types {
+    color: #ffffff;
+    font-size: 21px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.types h3 {
+    font-weight: bold;
+    margin: 30px 0;
+}
+.checkbox {
+    margin: 25px 0;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + .square:before {
+    background-color: #fff;
+}
+.square:before {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 2.5px;
+    
+}
+.checkbox label {
+    float: left;
+}
+.checkbox:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.checkbox-text {
+    margin-left: 10px;
+}
+.more-options {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    font-size: 21px;
+    text-align: center;
+}
+.submit {
+    width: 210px;
+    height: 50px;
+    margin: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 21px;
+    background-color: #2c71b8;
+    border: 1px solid #ffffff;
+}
+.submit:hover {
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+}
+.breadcrumbs {
+    margin: 30px 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.breadcrumbs a {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+.h1 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.block {
+    border: 1px solid #ffffff;
+    margin-top: 30px;
+}
+.images {
+    position: relative;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.device {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.option-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+}
+.option {
+    background-image: url("demoShop/icon (8).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b8;
+}
+.option:hover {
+    background-image: url("demoShop/icon (6).png");
+    background-color: #2c71b8;
+}
+.like-btn {
+    padding: 0;
+    border: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    top: 50px;
+    right: 10px;
+}
+.like {
+    background-image: url("demoShop/icon (5).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b8;
+}
+.like:hover, .liked  {
+    background-image: url("demoShop/icon (7).png");
+    background-color: #2c71b8;
+}
+.text {
+    padding: 12px 15px;
+    color: #ffffff;
+    background-color: rgba(44, 113, 184, 0.75);
+}
+.text h3 {
+    font-size: 30px;
+}
+
+.text p {
+    margin-top: 20px;
+    font-size: 21px;
+}
+.text span {
+    font-weight: bold;
+}
+.price {
+    text-align: center;
+    margin: 10px;
+}
+.price span {
+    font-size: 48px;
+}
+.price sup {
+    vertical-align: super;
+    font-size: 24px;
+}
+.text .button1,  .text .button2 {
+    width: 210px;
+    height: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 21px;
+    background-color: #2c71b8;
+    border: 1px solid #ffffff;
+}
+text .button1:hover,  .text .button2:hover {
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+}
+.button1 {
+    margin: 15px;
+    margin-bottom: 0;
+}
+.button2 {
+    margin: 15px;
+}
+.basket2 {
+    background-image: url("demoShop/icon (2).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 15px;
+    height: 18px;
+    margin-left: 12px;
+}
+.loading {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+.footer {
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 100px;
+}
+.footer p {
+    text-align: center;
+    line-height: 100px;
+    font-size: 21px;
+    color: #2c71b8;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.modal-block {
+    width: 300px;
+    margin: 80px auto;
+    height: 200px;
+    border: 1px solid gray;
+    padding: 15px;
+    background-color: white;
+}
+.form-fields {
+    margin: 10px 0;
+}
+.form-fields input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+
+}
+.btn-close {
+    text-align: right;
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.quantity-input {
+    text-align: center;
+}
